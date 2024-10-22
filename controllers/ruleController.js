@@ -42,7 +42,6 @@ exports.combineRules = async (req, res) => {
     }
     const ruleASTs = ruleDocs.map(rule => rule.ruleAST);
     const combinedRootNode = combineNodes(ruleASTs,op);
-    // Generate a 4-letter random string
     const randomString = generateRandomLetterString(4);
     const rule = new Rule({ ruleName: `combined${randomString}`, ruleAST: combinedRootNode });
     await rule.save();
@@ -58,9 +57,6 @@ exports.evaluateRule = async (req, res) => {
   try {
     const { ast, data } = req.body;
     const rule = await Rule.find({ruleName: ast});
-     // Log the fetched rule
-    //  printTree(rule[0].ruleAST);
-    //  console.log('Fetched rule:',rule,ast); // Debug line
 
     if (!rule) {
       return res.status(404).json({ error: 'Rule not found' });
