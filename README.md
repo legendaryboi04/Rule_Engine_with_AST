@@ -48,7 +48,7 @@ This application is a rule engine that determines user eligibility based on attr
    nodemon server.js
    ```
 
-### API Endpoints
+## API Endpoints
 
 1. **Create a Rule**
 Endpoint: ``` /api/create_rule ```
