@@ -23,13 +23,10 @@ This application is a rule engine that determines user eligibility based on attr
 ![image](https://github.com/user-attachments/assets/ca33200c-5c4d-46fa-a1aa-20443faed89a)
 
 
-- **Tree Visualization:** Define or combine rules to show a tree representation.
-
 ## Tech Stack
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 
-## Getting Started
 
 ## Prerequisites
 - Node.js and npm installed
